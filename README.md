@@ -30,7 +30,7 @@ fastapi_hex/
 ```
 
 
-## Iniciando
+## Execução
 
 Siga estes passos para configurar e executar o projeto:
 
@@ -67,17 +67,11 @@ Siga estes passos para configurar e executar o projeto:
     pip install -r requirements.txt
     ```
 
-### Executando a Aplicação
-
-1. **Inicie o FastAPI Server**  
+5. **Inicie o FastAPI Server**  
     ```bash
     uvicorn app.main:app --reload
     ```
 
-2. **Acesse a documentação da API**  
-    Abra seu navegador e pesquise:  
-    - Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)  
-    - ReDoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
 ##  Licença  
 Este projeto está licenciado sob a MIT License. Veja [License](LICENSE) para mais detalhes.
