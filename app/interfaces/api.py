@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from app.domain.models import User
+from app.domain.models import User, UserCreate
 from app.application.services import UserService
 
 def get_user_router(service: UserService) -> APIRouter:
@@ -18,11 +18,11 @@ def get_user_router(service: UserService) -> APIRouter:
         return user
 
     @router.post("/users", response_model=User)
-    def create_user(user: User):
+    def create_user(user: UserCreate):
         return service.create_user(user)
 
     @router.put("/users/{user_id}", response_model=User)
-    def update_user(user_id: int, user: User):
+    def update_user(user_id: int, user: UserCreate):
         updated = service.update_user(user_id, user)
         if not updated:
             raise HTTPException(status_code=404, detail="User not found")
