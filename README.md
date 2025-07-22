@@ -80,7 +80,7 @@ Siga estes passos para configurar e executar o projeto:
     - ReDoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
 ##  Licença  
-Este projeto está licenciado sob a MIT License. Veja [MIT License](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a MIT License. Veja [License](LICENSE) para mais detalhes.
 
 ##  **Agradecimentos**
 ###
